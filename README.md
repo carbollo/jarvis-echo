@@ -55,13 +55,18 @@ sin que repitas «Jarvis», para seguir la conversación; di **«gracias»** par
 También puedes pulsar **Hablar** en la app o pulsar dos veces **Volumen +**. «Jarvis, para» corta la
 respuesta; «Jarvis, repite» la repite; «Jarvis, nueva conversación» empieza una conversación nueva.
 
+Si tu relay tiene una clave de Groq, Jarvis transcribe cada orden con **Whisper**, que entiende muchísimo
+mejor que el reconocedor del Echo (interruptor **Entender mejor con Whisper**). Sin conexión, usa el del
+Echo.
+
 Si le cuesta oír «Jarvis», sube su sensibilidad en la app; si se activa solo, bájala. **Reducir ruido del
 micrófono** ayuda si hablas de lejos o hay ruido de fondo.
 
 ## Privacidad
 
-- El reconocimiento de voz y la voz de Jarvis funcionan dentro de la app: el audio no sale del dispositivo.
-  A Claude solo llega el texto de lo que dices.
+- «Jarvis» se detecta dentro de la app, y la voz de Jarvis también suena desde la app. Con Whisper
+  activado, el audio de cada orden (solo lo que dices después de «Jarvis») va a Groq para transcribirlo.
+  Sin Whisper, el audio no sale del dispositivo. A Claude solo llega el texto de lo que dices.
 - Jarvis no guarda ni ve tu cuenta de Claude. En el modo claude.ai, la sesión la guarda el componente web
   de Android, como en cualquier navegador, y Jarvis no la lee ni la envía a ningún sitio.
 - Este instalador no lleva dentro ninguna dirección ni clave: el relay y el código de acceso se escriben en
