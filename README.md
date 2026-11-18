@@ -1,7 +1,7 @@
 # Jarvis Echo
 
 Asistente de voz con Claude para el **Echo Show 5 con LineageOS** (y otras tablets Android 8 o superior).
-Todo en **una sola app**: oye «Jarvis», habla con Claude usando **tu suscripción de claude.ai** y maneja el
+Todo en **una sola app**: oye «Jarvis», habla con Claude usando **tu suscripción de Claude** y maneja el
 dispositivo (apps, música, volumen, brillo, luz, alarmas, temporizadores y cualquier app en pantalla).
 
 ## Descargar
@@ -14,6 +14,9 @@ En el Echo Show, escribe esta dirección en el navegador:
 github.com/carbollo/jarvis-echo/releases/latest/download/JarvisEcho.apk
 ```
 
+Para actualizar, descarga la versión nueva desde la misma dirección e instálala encima: se conservan los
+ajustes y la conexión.
+
 ## Instalar en el Echo Show
 
 1. Abre la dirección de arriba en el navegador del Echo Show y descarga `JarvisEcho.apk`.
@@ -25,11 +28,16 @@ github.com/carbollo/jarvis-echo/releases/latest/download/JarvisEcho.apk
       «Mientras se usa la app».
    2. **Relay:** escribe la **dirección del relay** y el **código de acceso** (te los da quien montó tu
       relay) y pulsa **Guardar y conectar**. Arriba debe poner **Conectado**.
-   3. **Claude:** pulsa **Abrir Claude** e inicia sesión **con tu correo** (los botones de Google y Apple no
+4. **Modo claude.ai (opcional).** Si tu relay tiene Claude Code en un servidor, Jarvis contesta con él y
+   esto no hace falta. Sirve para usar claude.ai dentro de la app y tus conectores de claude.ai (Gmail,
+   Calendar…), que solo funcionan en este modo:
+   1. Pulsa **Abrir Claude** e inicia sesión **con tu correo** (los botones de Google y Apple no
       funcionan dentro de apps). Abre el enlace del correo en el móvil: te mostrará un código; escríbelo en
       el Echo Show.
-4. En Claude (desde el Echo, el móvil o el PC): **Ajustes → Conectores → Añadir conector personalizado**,
-   nombre `Echo Show` y la URL de tu conector. Después pon **Permitir siempre** en sus herramientas.
+   2. En Claude (desde el Echo, el móvil o el PC): **Ajustes → Conectores → Añadir conector
+      personalizado**, nombre `Echo Show` y la URL de tu conector. Después pon **Permitir siempre** en sus
+      herramientas.
+   3. En Jarvis Echo, desactiva **Usar Claude Code del servidor**.
 
 ## Uso
 
@@ -38,18 +46,24 @@ Di **«Jarvis»** y lo que quieras, de un tirón o con una pausa (suena un pitid
 - «Jarvis, pon un temporizador de diez minutos.»
 - «Jarvis, pon música relajante.»
 - «Jarvis, baja el volumen al veinte por ciento.»
-- «Jarvis, ¿qué tengo mañana en el calendario?»
+- «Jarvis, ¿qué noticias hay hoy?»
 - «Jarvis, abre YouTube y busca recetas de lentejas.»
 
+Jarvis empieza a hablar en cuanto llega la primera frase de la respuesta. Después te escucha unos segundos
+sin que repitas «Jarvis», para seguir la conversación; di **«gracias»** para terminar.
+
 También puedes pulsar **Hablar** en la app o pulsar dos veces **Volumen +**. «Jarvis, para» corta la
-respuesta; «Jarvis, repite» la repite; «Jarvis, nueva conversación» empieza un chat nuevo.
+respuesta; «Jarvis, repite» la repite; «Jarvis, nueva conversación» empieza una conversación nueva.
+
+Si le cuesta oír «Jarvis», sube su sensibilidad en la app; si se activa solo, bájala. **Reducir ruido del
+micrófono** ayuda si hablas de lejos o hay ruido de fondo.
 
 ## Privacidad
 
 - El reconocimiento de voz y la voz de Jarvis funcionan dentro de la app: el audio no sale del dispositivo.
   A Claude solo llega el texto de lo que dices.
-- La sesión de claude.ai la guarda el componente web de Android, como en cualquier navegador. Jarvis no la
-  lee ni la envía a ningún sitio.
+- Jarvis no guarda ni ve tu cuenta de Claude. En el modo claude.ai, la sesión la guarda el componente web
+  de Android, como en cualquier navegador, y Jarvis no la lee ni la envía a ningún sitio.
 - Este instalador no lleva dentro ninguna dirección ni clave: el relay y el código de acceso se escriben en
   el propio dispositivo.
 
