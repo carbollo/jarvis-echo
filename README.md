@@ -62,6 +62,16 @@ Echo.
 Si le cuesta oír «Jarvis», sube su sensibilidad en la app; si se activa solo, bájala. **Reducir ruido del
 micrófono** ayuda si hablas de lejos o hay ruido de fondo.
 
+## Casa
+
+Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configurados:
+
+- **Tele** (Android TV / Google TV): encender, apagar, volumen, canales, entradas, apps y menús. Se empareja
+  una vez: «Jarvis, empareja la tele» (o la tarjeta **Casa**) y le dices el código que sale en la tele.
+- **PC:** encenderlo por la red y apagarlo, reiniciarlo, suspenderlo o bloquearlo (con un pequeño agente en
+  el PC).
+- **Bombillas WiZ:** las encuentra solas. Puedes cambiarles brillo, color y escenas, y ponerles nombre.
+
 ## Privacidad
 
 - «Jarvis» se detecta dentro de la app, y la voz de Jarvis también suena desde la app. Con Whisper
