@@ -52,6 +52,7 @@ Di **«Jarvis»** y lo que quieras, de un tirón o con una pausa (suena un pitid
 - «Jarvis, baja el volumen al veinte por ciento.»
 - «Jarvis, ¿qué noticias hay hoy?»
 - «Jarvis, abre YouTube y busca recetas de lentejas.»
+- «Jarvis, ¿qué ves?» (mira por la cámara; da antes el permiso de la cámara en **⚙ Ajustes**)
 
 Jarvis empieza a hablar en cuanto llega la primera frase de la respuesta. Si tu relay tiene el cerebro en un
 servidor, habla con una **voz natural** (neuronal) y puedes elegir entre tres voces de España en
@@ -105,6 +106,8 @@ Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configura
   Sin Whisper, el audio no sale del dispositivo. A Claude solo llega el texto de lo que dices.
 - Jarvis no guarda ni ve tu cuenta de Claude. En el modo claude.ai, la sesión la guarda el componente web
   de Android, como en cualquier navegador, y Jarvis no la lee ni la envía a ningún sitio.
+- La cámara solo se usa cuando se lo pides: suena como una cámara de fotos y la foto va a Claude sin
+  guardarse en el dispositivo.
 - Con la voz natural, el texto de lo que dice Jarvis se convierte en voz en el servidor de tu relay.
 - La memoria, las listas, los avisos y las rutinas se guardan en tu relay. Para el tiempo del panel, la app
   pide la previsión a Open-Meteo con una ubicación aproximada (unos 1 km) y nada más.
