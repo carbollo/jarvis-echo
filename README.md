@@ -112,6 +112,21 @@ Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configura
   el PC).
 - **Bombillas WiZ:** las encuentra solas. Puedes cambiarles brillo, color y escenas, y ponerles nombre.
 
+## Jarvis Móvil (la app del móvil)
+
+Otra app, para el móvil, con el mismo Jarvis: la misma memoria, listas, avisos y conversación, y tu casa a través del
+Echo (funciona también fuera de casa). Descarga:
+[JarvisMovil.apk](https://github.com/carbollo/jarvis-echo/releases/latest/download/JarvisMovil.apk).
+
+- **Vincularla:** escribe /movil al bot de Telegram de tu Jarvis y abre el enlace que te manda en el móvil.
+- **Hablarle:** como asistente del móvil (mantén pulsado inicio o encendido), con el widget «Jarvis», con el botón de
+  los ajustes rápidos, o diciendo «Jarvis» con la app abierta.
+- **Mandos de casa:** las teles, la música, el PC y las luces, con botones.
+- **Listas y avisos:** para verlos y tocarlos; los avisos «en el móvil» llegan como notificación.
+- **El móvil:** Jarvis puede poner alarmas y temporizadores, abrir apps, mirar con la cámara del móvil y saber dónde estás.
+- **Reuniones:** deja el móvil en la mesa y se transcribe en directo; al terminar, Claude hace el informe y lo descargas
+  en PDF y en Word.
+
 ## Privacidad
 
 - «Jarvis» se detecta dentro de la app, y la voz de Jarvis también suena desde la app. Con Whisper
@@ -123,6 +138,8 @@ Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configura
   guardarse en el dispositivo.
 - Con la voz natural, el texto de lo que dice Jarvis se convierte en voz en el servidor de tu relay.
 - Spotify: tu relay guarda el permiso de tu cuenta (dura 6 meses) y habla con Spotify para poner la música.
+- Jarvis Móvil: las órdenes de voz y las reuniones se transcriben con Whisper (Groq); la transcripción de una reunión va
+  a Claude para el informe, y el informe se guarda en tu móvil. La ubicación solo se manda si lo activas.
 - La memoria, las listas, los avisos y las rutinas se guardan en tu relay. Para el tiempo del panel, la app
   pide la previsión a Open-Meteo con una ubicación aproximada (unos 1 km) y nada más.
 - Este instalador no lleva dentro ninguna dirección ni clave: el relay y el código de acceso se escriben en
