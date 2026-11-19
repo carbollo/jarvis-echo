@@ -48,7 +48,7 @@ ajustes y la conexión.
 Di **«Jarvis»** y lo que quieras, de un tirón o con una pausa (suena un pitido cuando te escucha):
 
 - «Jarvis, pon un temporizador de diez minutos.»
-- «Jarvis, pon música relajante.»
+- «Jarvis, pon música de Bad Bunny.» / «Jarvis, para la música.»
 - «Jarvis, baja el volumen al veinte por ciento.»
 - «Jarvis, ¿qué noticias hay hoy?»
 - «Jarvis, abre YouTube y busca recetas de lentejas.»
@@ -86,18 +86,28 @@ Todo esto se guarda en tu relay, no en el dispositivo: no se pierde al reinstala
 **Desde el móvil:** si tu relay tiene un bot de Telegram, puedes escribir o mandar notas de voz a Jarvis
 desde cualquier sitio, recibir los avisos en el móvil y pedirle que diga algo en casa.
 
+## Música (Spotify)
+
+Si tu relay tiene conectada una cuenta de **Spotify Premium**, Jarvis pone tu música: «pon Bad Bunny», «pon
+rock de los 80», «pon mi lista de los domingos», «para la música», «siguiente», «más alto», «ponlo en la tele del
+salón». Suena en el propio dispositivo, con la app de Spotify, o en otro aparato de casa que tenga Spotify abierto.
+Mientras Jarvis te escucha y te contesta, la música baja. El panel enseña lo que suena y tiene los botones ⏮ ⏯ ⏭.
+
 ## Panel
 
-Con la app delante, la pantalla enseña la hora, la fecha, el tiempo de tu zona, los próximos avisos, tus
-listas y lo último que dijo Jarvis, y no se apaga. De 23:00 a 7:00 baja el brillo y solo enseña la hora
+Con la app delante, la pantalla enseña la hora, la fecha, el tiempo de tu zona, lo que suena en Spotify, los
+próximos avisos, tus listas y lo último que dijo Jarvis, y no se apaga. De 23:00 a 7:00 baja el brillo y solo enseña la hora
 (tócala para verlo todo). Se cambia en **⚙ Ajustes → Panel**.
 
 ## Casa
 
 Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configurados:
 
-- **Tele** (Android TV / Google TV): encender, apagar, volumen, canales, entradas, apps y menús. Se empareja
-  una vez: «Jarvis, empareja la tele» (o la tarjeta **Casa**) y le dices el código que sale en la tele.
+- **Teles, cada una con su nombre**: Android TV / Google TV (como las TCL), LG (webOS) y Samsung (Tizen).
+  Encender, apagar, volumen, canales, entradas, apps y menús: «apaga la tele del dormitorio», «pon Netflix en
+  la del salón». Si no dices cuál, usa la última que manejaste o la principal. Cada tele se empareja una vez:
+  «Jarvis, empareja la tele del salón» (o la tarjeta **Casa**). Las Android TV enseñan un código que le dices a
+  Jarvis; la LG y la Samsung piden que aceptes un aviso con su mando.
 - **PC:** encenderlo por la red y apagarlo, reiniciarlo, suspenderlo o bloquearlo (con un pequeño agente en
   el PC).
 - **Bombillas WiZ:** las encuentra solas. Puedes cambiarles brillo, color y escenas, y ponerles nombre.
@@ -112,6 +122,7 @@ Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configura
 - La cámara solo se usa cuando se lo pides: suena como una cámara de fotos y la foto va a Claude sin
   guardarse en el dispositivo.
 - Con la voz natural, el texto de lo que dice Jarvis se convierte en voz en el servidor de tu relay.
+- Spotify: tu relay guarda el permiso de tu cuenta (dura 6 meses) y habla con Spotify para poner la música.
 - La memoria, las listas, los avisos y las rutinas se guardan en tu relay. Para el tiempo del panel, la app
   pide la previsión a Open-Meteo con una ubicación aproximada (unos 1 km) y nada más.
 - Este instalador no lleva dentro ninguna dirección ni clave: el relay y el código de acceso se escriben en
