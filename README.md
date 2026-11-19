@@ -3,6 +3,8 @@
 Asistente de voz con Claude para el **Echo Show 5 con LineageOS** (y otras tablets Android 8 o superior).
 Todo en **una sola app**: oye «Jarvis», habla con Claude usando **tu suscripción de Claude** y maneja el
 dispositivo (apps, música, volumen, brillo, luz, alarmas, temporizadores y cualquier app en pantalla).
+Recuerda lo que le pides, lleva tus listas, te avisa a la hora que le digas, aprende rutinas con tus
+palabras y convierte la pantalla en un panel con la hora, el tiempo, tus avisos y tus listas.
 
 ## Descargar
 
@@ -28,6 +30,8 @@ ajustes y la conexión.
       «Mientras se usa la app».
    2. **Relay:** escribe la **dirección del relay** y el **código de acceso** (te los da quien montó tu
       relay) y pulsa **Guardar y conectar**. Arriba debe poner **Conectado**.
+
+   Con todo configurado, la app se abre en el **panel**; los ajustes están en **⚙ Ajustes**.
 4. **Modo claude.ai (opcional).** Si tu relay tiene Claude Code en un servidor, Jarvis contesta con él y
    esto no hace falta. Sirve para usar claude.ai dentro de la app y tus conectores de claude.ai (Gmail,
    Calendar…), que solo funcionan en este modo:
@@ -62,6 +66,26 @@ Echo.
 Si le cuesta oír «Jarvis», sube su sensibilidad en la app; si se activa solo, bájala. **Reducir ruido del
 micrófono** ayuda si hablas de lejos o hay ruido de fondo.
 
+## Memoria, listas, avisos y rutinas
+
+Si tu relay lo tiene, Claude entiende lo que quieres decir, sin frases fijas:
+
+- **Memoria:** «Jarvis, recuerda que he aparcado en la planta 2» → «¿dónde dejé el coche?».
+- **Listas:** «añade leche y huevos a la lista de la compra», «quita los huevos», «¿qué hay en la lista?».
+- **Avisos:** «recuérdame dentro de diez minutos que saque la pizza», «de lunes a viernes a las 8 dime el
+  tiempo». A su hora suena un timbre y Jarvis lo dice, aunque nadie haya hablado; luego puedes contestar
+  «recuérdamelo otra vez en cinco minutos».
+- **Rutinas:** «cuando te diga que me voy a dormir, apaga la tele y el PC». Luego basta con algo que
+  signifique lo mismo («me voy a la cama»).
+
+Todo esto se guarda en tu relay, no en el dispositivo: no se pierde al reinstalar la app.
+
+## Panel
+
+Con la app delante, la pantalla enseña la hora, la fecha, el tiempo de tu zona, los próximos avisos, tus
+listas y lo último que dijo Jarvis, y no se apaga. De 23:00 a 7:00 baja el brillo y solo enseña la hora
+(tócala para verlo todo). Se cambia en **⚙ Ajustes → Panel**.
+
 ## Casa
 
 Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configurados:
@@ -79,6 +103,8 @@ Jarvis maneja aparatos de casa por la red local, si tu relay los tiene configura
   Sin Whisper, el audio no sale del dispositivo. A Claude solo llega el texto de lo que dices.
 - Jarvis no guarda ni ve tu cuenta de Claude. En el modo claude.ai, la sesión la guarda el componente web
   de Android, como en cualquier navegador, y Jarvis no la lee ni la envía a ningún sitio.
+- La memoria, las listas, los avisos y las rutinas se guardan en tu relay. Para el tiempo del panel, la app
+  pide la previsión a Open-Meteo con una ubicación aproximada (unos 1 km) y nada más.
 - Este instalador no lleva dentro ninguna dirección ni clave: el relay y el código de acceso se escriben en
   el propio dispositivo.
 
