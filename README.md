@@ -83,6 +83,9 @@ Si tu relay lo tiene, Claude entiende lo que quieres decir, sin frases fijas:
 
 Todo esto se guarda en tu relay, no en el dispositivo: no se pierde al reinstalar la app.
 
+**Desde el móvil:** si tu relay tiene un bot de Telegram, puedes escribir o mandar notas de voz a Jarvis
+desde cualquier sitio, recibir los avisos en el móvil y pedirle que diga algo en casa.
+
 ## Panel
 
 Con la app delante, la pantalla enseña la hora, la fecha, el tiempo de tu zona, los próximos avisos, tus
